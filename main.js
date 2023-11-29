@@ -1,5 +1,3 @@
-import * as THREE from "three";
-
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xababab)
 const camera = new THREE.PerspectiveCamera(
@@ -14,17 +12,17 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: 0xDC143C });
+const material = new THREE.MeshBasicMaterial({ color: 0xff1493 });
 const cube = new THREE.Mesh(geometry, material);
 camera.position.z = 5;
 
 const geometry2 = new THREE.BoxGeometry(1, 1, 1);
-const material2 = new THREE.MeshBasicMaterial({ color: 0xff0ff0 });
+const material2 = new THREE.MeshBasicMaterial({ color: 0x0099cc });
 const cube2 = new THREE.Mesh(geometry2, material2);
 cube2.position.x = 2;
 
 const geometry3 = new THREE.BoxGeometry(1, 1, 1);
-const material3 = new THREE.MeshBasicMaterial({ color: 0x00fff });
+const material3 = new THREE.MeshBasicMaterial({ color: 0xf9d62e });
 const cube3 = new THREE.Mesh(geometry3, material3);
 cube3.position.x = -2;
 
